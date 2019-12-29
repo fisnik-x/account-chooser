@@ -33,7 +33,8 @@ Follow instructions here: https://www.furqansiddiqui.com/install-php-7-with-apac
 ## Addendum
 The aim of this project is to showcase some of the cool features, some of the most popular websites implement. The project can be downloaded and used in a real production environment. I am fully aware of the different security cryptographies that exist for PHP 7.4. Some of the older cryptographies have been depreciated. This project uses *openssl*, even if *libsodium* is built in. 
 
-The reason for built in openssl over libsodium, is because of backward compatibility, e.g. if someone tries this under PHP 7.0 or 7.1, then very little effort or no effort is required to run this. While in a real production environment, libsodium would be much preferred. 
+The reason for implementing with openssl over libsodium, is because of backward compatibility, e.g. if someone tries this under PHP 7.0 or 7.1. Additionally, openssl encryption has existed as far back as PHP 5 >= 5.3.0. 
+However, in a real production environment libsodium would be much preferred. 
 
 ***Disclaimer**: I know that *Microsoft URL Rewrite Module 2.0 for IIS* exist, but, I also know that this module is not easy to use, therefore, I am proposing: IIS Mod-Rewrite by a third-party provider.
 
