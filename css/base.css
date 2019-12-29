@@ -1,0 +1,202 @@
+*{
+    transition: all 0.2s ease-in 0s;
+    -webkit-trasition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #fff;
+    color:#1c1e21;
+    direction: ltr;
+    line-height: 1.5;
+    unicode-bidi: embed;
+}
+
+body, button, input, label, select, td, textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+main {
+    height: 100%;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+article {
+    padding-right: 220px;
+    padding-left: 220px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: block;
+    text-rendering: optimizeLegibility;
+}
+
+h2 {
+    color: #4b4f56;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 0px 0px 8px 0px;
+}
+
+h2.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+form {
+    min-width: 296px;
+    border: 1px solid #dddfe2;
+    border-radius: 3px;
+    padding: 20px 110px 20px;
+    margin: 14px auto;
+}
+
+label, input { display: block; }
+
+label {
+    font-weight:bold;
+    cursor: pointer;
+}
+
+input[type="text"], input[type="password"] {
+    border-radius: 3px;
+    border: 1px solid #dadce0;
+    color: #202124;
+    font-size: 14px;
+    padding: 5px 8px;
+    outline: none;
+    width: 240px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus 
+{
+    color: #495057;
+    background-color: #fff;
+    border-color: #4080ff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(200, 252, 252, 0.6);
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #1c1e21;
+    font-size: 14px;
+}
+
+ul.accounts-list {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+ul.accounts-list li:first-child a div.account {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top: 1px solid #eee;
+}
+
+ul.accounts-list li:last-child a div.account {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom: 1px solid #eee;
+}
+
+ul.accounts-list li a div.account {
+    border-top: 1px solid #eee;
+    font-weight: bold;
+    padding: 14px 32px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+ul.accounts-list li a:hover div.account {
+    background-color: azure;
+    color: #4080ff;
+}
+
+.form-group {
+    margin-bottom: 0.7rem;
+}
+
+.checkbox-label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.note {
+    color: #90949c;
+    min-width: 389px;
+    word-wrap: break-word;
+    background-color: #f5f6f7;
+    padding: 6px;
+    border-radius: 3px;
+    margin-bottom: 6px;
+}
+
+.note.white {
+    background-color: #fff !important;
+}
+
+.note.center_10px {
+    margin: 10px auto;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden
+}
+
+.float-left { float: left !important; }
+.float-right { float: right !important; }
+
+.remove-btn {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../rsrc/delete_btn.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    border: 0 none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0 !important;
+    height: 12px;
+    overflow: hidden;
+    padding: 0;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 12px;
+}
+
+.remove-btn:hover {
+    background-position: -13px 0;
+}
