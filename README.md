@@ -23,7 +23,8 @@ Eventually, this functionality came to the web, with Google being the first plat
 I wrote all of the code from a **Windows PC**. If you are on Windows and decide to give this a try, make sure you have everything properly setup and configured prior.
 Follow instructions here: https://www.furqansiddiqui.com/install-php-7-with-apache-2-on-windows-10/.
 
-## Future Improvements
+## Todos and Future Improvements
+* Fix validity reporting in the login form
 * Improve the *cryptography.php* class and make it more modular
 * Implement a delete an account from the list (*Ajax implemented*)
 * Implement a remove all accounts (*Ajax implemented*)
@@ -35,3 +36,7 @@ The aim of this project is to showcase some of the cool features, some of the mo
 The reason for built in openssl over libsodium, is because of backward compatibility, e.g. if someone tries this under PHP 7.0 or 7.1, then very little effort or no effort is required to run this. While in a real production environment, libsodium would be much preferred. 
 
 ***Disclaimer**: I know that *Microsoft URL Rewrite Module 2.0 for IIS* exist, but, I also know that this module is not easy to use, therefore, I am proposing: IIS Mod-Rewrite by a third-party provider.
+
+
+## License
+This PHP project is open source software [licensed as MIT](LICENSE).
