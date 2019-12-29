@@ -5,6 +5,13 @@ For many years, I have had the idea of implementing a functionality, that normal
 
 Eventually, this functionality came to the web, with Google being the first platform to introduce this. Inspired by this, I decided to showcase and deconstruct both Google's and Facebook's account chooser functionality. By implementing similar functionality with PHP and jQuery. 
 
+## Account Chooser Feature
+1. You fillout the fields, lets say, hypothetically speaking, that Elon Musk would sign in and he checks the **Remember me** checkbox.
+<img src="screenshot_1.png" />
+
+2. Next time, the user, comes back to the site, he/she can easily select their account from the list. 
+<img src="screenshot_2.png" />
+
 ## Prerequisites
 - Prior knowledge of PHP OOP
 - [Apache 2.4.x](https://httpd.apache.org/)
@@ -14,7 +21,7 @@ Eventually, this functionality came to the web, with Google being the first plat
 
 ## Note to Windows Users
 I wrote all of the code from a **Windows PC**. If you are on Windows and decide to give this a try, make sure you have everything properly setup and configured prior.
-Follow instructions here: https://www.furqansiddiqui.com/install-php-7-with-apache-2-on-windows-10/. 
+Follow instructions here: https://www.furqansiddiqui.com/install-php-7-with-apache-2-on-windows-10/.
 
 ## Future Improvements
 * Improve the *cryptography.php* class and make it more modular
