@@ -40,4 +40,4 @@ However, in a real production environment libsodium would be much preferred.
 
 
 ## License
-This PHP project is open source software [licensed as MIT](LICENSE).
+This PHP project is licensed under the [BSD 2-Clause License](LICENSE).
