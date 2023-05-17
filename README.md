@@ -24,11 +24,11 @@ I wrote all of the code from a **Windows PC**. If you are on Windows and decide 
 Follow instructions here: https://www.furqansiddiqui.com/install-php-7-with-apache-2-on-windows-10/.
 
 ## Todos and Future Improvements
-* Fix validity reporting in the login form
-* Improve the *cryptography.php* class and make it more modular
-* Implement a delete an account from the list (*Ajax implemented*)
-* Implement a remove all accounts (*Ajax implemented*)
-* Improve this Readme - when I have more time
+- [ ] Fix validity reporting in the login form
+- [ ] Improve the *cryptography.php* class and make it more modular
+- [ ] Implement a delete an account from the list (*Ajax implemented*)
+- [ ] Implement a remove all accounts (*Ajax implemented*)
+- [ ] Improve this Readme - when I have more time
 
 ## Addendum
 The aim of this project is to showcase some of the cool features, some of the most popular websites implement. The project can be downloaded and used in a real production environment. I am fully aware of the different security cryptographies that exist for PHP 7.4. Some of the older cryptographies have been depreciated. This project uses *openssl*, even if *libsodium* is built in. 
