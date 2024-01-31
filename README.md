@@ -1,4 +1,4 @@
-# Account Chooser [![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+# Account Chooser
 
 ## Motivation
 For many years, I have had the idea of implementing a functionality, that normally was available on more modern operating systems. A sign in **account chooser** functionality which would list most recently used accounts, and allow to sign in with *ease*. 
