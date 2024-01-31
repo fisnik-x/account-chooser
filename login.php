@@ -27,17 +27,19 @@ if ($email != null && $passowrd != null) {
             'remember' => $_POST['remember'],
             'timestamp' => date("Y-m-d H:i:s") 
         ];
-    
-        foreach($users as $k => $v) {
-            if ($v['email'] == $account_credentials['email']){
-                $tmp->render();
-                return;
+        
+        if($users != null){
+            foreach($users as $k => $v) {
+                if ($v['email'] == $account_credentials['email']){
+                    $tmp->render();
+                    return;
+                }
             }
         }
     
         $users[] = $account_credentials;
         $cookie->set_cookie($cookie_name, $crypto->encrypt(json_encode($users)), -1, "/", $_SERVER['SERVER_ADDR'], true, false, "strict");
-        header("Location: /account-selector/");
+        header("Location: /account-chooser/");
     }
 }
 
