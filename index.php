@@ -19,9 +19,10 @@ else {
     $html = '<ul class="accounts-list">';
     if (is_array($data)){
         foreach($data as $k => $v) {
-            $html .= '<li>
-            <a href="#">
-            <div class="account">'.$v['email'].'</div>
+            $html .= '<li data-id="'.$v['uid'].'" class="account-item"">
+            <a class="" href="#">
+            <div class="account">
+            <span>'.$v['email'].'</span><i title="Remove account" class="remove-btn float-right"></i></div>
             </a>
         </li>';
         }
@@ -29,7 +30,7 @@ else {
     $html .= '<li>
         <a href="login">
         <div class="account">
-            Add another account
+            Use another account
         </div>
         </a>
     </li>';

@@ -99,6 +99,14 @@ final class Cookie{
         return array_key_exists($key, $_COOKIE);
     }
 
+    public function clear(string $name = "") : void 
+    {
+        if($this->cookie_exists($name)){
+            setcookie($name, '', time() - 3600, '/');
+            unset($_COOKIE[$name]);
+        }
+    }
+
     /**
      * Clears all cookies under current domain
      */
@@ -110,6 +118,7 @@ final class Cookie{
 
         foreach($_COOKIE as $k => $v) {
             setcookie($key, '', time() - 3600, '/');
+            unset($_COOKIE[$key]);
         }
     }
 }

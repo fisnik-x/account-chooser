@@ -38,9 +38,11 @@ use Strings\Template\Template;
 global $crypto;
 global $tmp;
 global $cookie; 
+global $cookie_name;
 
 $crypto = new Cryptography();
 $tmp = new Template();
+$cookie_name = "dtr";
 $cookie = Cookie::get_instance();
 
 ?>
