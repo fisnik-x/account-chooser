@@ -132,12 +132,6 @@ ul.accounts-list li a:hover div.account {
     transition: all 0.2s ease-in 0s;
 }
 
-ul.accounts-list li a:hover + .remove-btn {
-    -webkit-trasition: all 0.2s ease-in 0s;
-    -moz-transition: all 0.2s ease-in 0s;
-    transition: all 0.2s ease-in 0s;
-}
-
 .form-group {
     margin-bottom: 0.7rem;
 }
@@ -201,7 +195,7 @@ ul.accounts-list li a:hover + .remove-btn {
     position: absolute;
     right: 20px;
     top: 20px;
-    display: none;
+    opacity: 0;
 }
 
 .remove-btn:hover {
@@ -213,3 +207,9 @@ ul.accounts-list li a:hover + .remove-btn {
     vertical-align: middle;
 }
 
+.account-item:hover .remove-btn {
+    opacity: 100%;
+    -webkit-trasition: opacity 0.2s ease-in 0s;
+    -moz-transition: opacity 0.2s ease-in 0s;
+    transition: opacity 0.2s ease-in 0s;
+}
