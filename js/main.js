@@ -7,10 +7,14 @@
         xhr.open("POST", "ajax/remove.php", true);
         xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=utf-8");
         xhr.onreadystatechange = () => {
-            if(xhr.readyState==4){
-                if(xhr.status==200){
-                    document.getElementById(xhr.responseText.toString()).remove(); 
-                }
+            if(xhr.readyState == 4 && xhr.status == 200){
+                document.querySelectorAll('.account-item').forEach((item) => {
+                    let uid = item.getAttribute("data-id").toString();
+                    let responeid = xhr.responseText.replace(/\"/g, "");
+                    if(uid == responeid){
+                        item.parentNode.removeChild(item);
+                    }
+                })
             }
         }
         xhr.send('data='+JSON.stringify(data));
@@ -24,5 +28,6 @@
             }
         });
     })
+
 })();
 

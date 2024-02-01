@@ -26,7 +26,7 @@ Follow instructions here: https://www.furqansiddiqui.com/install-php-7-with-apac
 ## Todos and Future Improvements
 - [ ] Fix validity reporting in the login form
 - [ ] Improve the *cryptography.php* class and make it more modular
-- [ ] Implement a delete an account from the list (*Ajax implemented*)
+- [x] Implement a delete an account from the list (*Ajax implemented*)
 - [ ] Implement a remove all accounts (*Ajax implemented*)
 - [ ] Improve this Readme - when I have more time
 

@@ -19,7 +19,7 @@ else {
     $html = '<ul class="accounts-list">';
     if (is_array($data)){
         foreach($data as $k => $v) {
-            $html .= '<li data-id="'.$v['uid'].'" class="account-item"">
+            $html .= '<li data-id="'.$v['uid'].'" class="account-item">
             <a class="" href="#">
             <div class="account">
             <span>'.$v['email'].'</span><i title="Remove account" class="remove-btn float-right"></i></div>

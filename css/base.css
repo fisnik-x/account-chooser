@@ -127,9 +127,15 @@ ul.accounts-list li a div.account {
 ul.accounts-list li a:hover div.account {
     background-color: azure;
     color: #4080ff;
-    transition: all 0.2s ease-in 0s;
     -webkit-trasition: all 0.2s ease-in 0s;
     -moz-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
+}
+
+ul.accounts-list li a:hover + .remove-btn {
+    -webkit-trasition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
 }
 
 .form-group {
@@ -195,6 +201,7 @@ ul.accounts-list li a:hover div.account {
     position: absolute;
     right: 20px;
     top: 20px;
+    display: none;
 }
 
 .remove-btn:hover {

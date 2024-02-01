@@ -18,7 +18,8 @@ if ($cookie->cookie_exists("dtr")) {
     }
     else {
         $cookie->set_cookie($cookie_name, $crypto->encrypt(json_encode($data)), -1, "/", $_SERVER['SERVER_ADDR'], true, false, "strict");
-        echo json_encode($request['user_id']);
     }
+
+    echo json_encode($request['user_id']);
 }
 ?>
