@@ -38,6 +38,10 @@ However, in a real production environment libsodium would be much preferred.
 
 ***Disclaimer**: I know that *Microsoft URL Rewrite Module 2.0 for IIS* exist, but, I also know that this module is not easy to use, therefore, I am proposing: IIS Mod-Rewrite by a third-party provider.
 
+## Contributing
+First off, thanks for taking the time to contribute! ❤️
+
+All types of contributions are encouraged and valued. If you know ways to improve anything in this project do not hesitate. The community looks forward to your contributions. 🎉 
 
 ## License
 This PHP project is licensed under the [BSD 2-Clause License](LICENSE).
