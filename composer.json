@@ -1,4 +1,6 @@
 {
+    "name": "account-chooser",
+	"description": "An example project that uses PHP 7.4",
     "require": {
         "php": ">=7.4.2"
     }
