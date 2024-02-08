@@ -20,22 +20,31 @@
         xhr.send('data='+JSON.stringify(data));
     };
 
-    const removeSelectedAccountsRequest = () => {
+    const removeSelectedAccountsRequest = () => {};
 
-    };
+    const handleRemoveBtnEvent = (e) => {
+        let classRemoved = false;
+        document.querySelectorAll('.accounts-list li.account-item .account').forEach(
+            (item) => {
+                item.childNodes.forEach((node) => {
+                    if(node.type === 'checkbox'){
+                        if(e.target.innerText === "Remove accounts"){
+                            node.classList.remove("hidden");
+                            classRemoved = true;
+                        }
+                        else{
+                            node.classList.add("hidden");
+                            classRemoved = false;
+                        }
+                    }
+                });
+            }
+        )
 
-    const enableCheckbox = () => {
-        document.querySelectorAll('.accounts-list li.account-item .account').forEach((item) => {
-            item.childNodes.forEach((node) => {
-                console.log(node);
-                if(node.type === 'checkbox'){
-                    node.classList.remove("hidden");
-                }
-            });
-        })
+        e.target.innerText = classRemoved ? "Cancel" : "Remove accounts";
     }
 
-    document.getElementById("remove-btn").addEventListener('click', () => { enableCheckbox() });
+    document.getElementById("remove-btn").addEventListener('click', (e) => { handleRemoveBtnEvent(e) });
 
     document.querySelectorAll('.accounts-list li').forEach((item) => {
         item.addEventListener('click', (e) => {

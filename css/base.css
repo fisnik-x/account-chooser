@@ -230,3 +230,7 @@ ul.accounts-list li div.account input[type="checkbox"] {
 .group-btns .group-item:first-child .account {
     border-right: 0;
 }
+
+.group-btns .group-item {
+    text-align: center;
+}
