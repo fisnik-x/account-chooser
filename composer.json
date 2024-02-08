@@ -1,7 +1,0 @@
-{
-	"name": "account-chooser",
-	"description": "An implementation of account chooser feature in PHP 7.4",
-	"require": {
-		"php": ">=7.4.2"
-	}
-}
