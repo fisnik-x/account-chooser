@@ -1,7 +1,15 @@
 {
-    "name": "account-chooser",
-	"description": "An example project that uses PHP 7.4",
-    "require": {
-        "php": ">=7.4.2"
-    }
+	"name": "account-chooser",
+	"description": "An implementation of account chooser feature in PHP 7.4",
+
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/php-actions/example-private-repo"
+		}
+	],
+
+	"require": {
+		"php": ">=7.4.2"
+	},
 }
