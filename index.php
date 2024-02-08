@@ -20,19 +20,33 @@ else {
     if (is_array($data)){
         foreach($data as $k => $v) {
             $html .= '<li data-id="'.$v['uid'].'" class="account-item">
-            <a class="" href="#">
+            <label for="'.$v['uid'].'">
             <div class="account">
-            <span>'.$v['email'].'</span><i title="Remove account" class="remove-btn float-right"></i></div>
-            </a>
+            <input type="checkbox" class="hidden" name="'.$v['uid'].'" value="'.$v['uid'].'" />
+            <span>'.$v['email'].'</span>
+            <i title="Remove account" class="remove-btn float-right"></i>
+            </div>
+            </label>
         </li>';
         }
     }
     $html .= '<li>
-        <a href="login">
-        <div class="account">
-            Use another account
+        <div class="group-btns">
+           <div class="group-item">
+                <a href="login">
+                    <div class="account">
+                        Use another account
+                    </div>
+                </a>
+            </div>
+            <div class="group-item">
+                <a href="#" id="remove-btn">
+                    <div class="account">
+                        Remove accounts
+                    </div>
+                </a>
+            </div>
         </div>
-        </a>
     </li>';
     $html .= "</ul>";
     $tmp->set_value("list_of_accounts", $html);

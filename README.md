@@ -1,9 +1,7 @@
 # Account Chooser
 
 ## Motivation
-For many years, I have had the idea of implementing a functionality, that normally was available on more modern operating systems. A sign in **account chooser** functionality which would list most recently used accounts, and allow to sign in with *ease*. 
-
-Eventually, this functionality came to the web, with Google being the first platform to introduce this. Inspired by this, I decided to showcase and deconstruct both Google's and Facebook's account chooser functionality. By implementing similar functionality with PHP and jQuery. 
+A sign in **account chooser** functionality which would list most recently used accounts, and allow to sign in with *ease*. Among many big tech platforms Google was the first platform to introduce a feature like this. Inspired by this, this repository tries to implement a similar feature that both Google and Facebook have. The implementation is done in PHP and JavaScript. 
 
 ## Account Chooser Feature
 1. You fillout the fields, lets say, hypothetically speaking, that Elon Musk would sign in and he checks the **Remember me** checkbox.

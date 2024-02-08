@@ -20,6 +20,23 @@
         xhr.send('data='+JSON.stringify(data));
     };
 
+    const removeSelectedAccountsRequest = () => {
+
+    };
+
+    const enableCheckbox = () => {
+        document.querySelectorAll('.accounts-list li.account-item .account').forEach((item) => {
+            item.childNodes.forEach((node) => {
+                console.log(node);
+                if(node.type === 'checkbox'){
+                    node.classList.remove("hidden");
+                }
+            });
+        })
+    }
+
+    document.getElementById("remove-btn").addEventListener('click', () => { enableCheckbox() });
+
     document.querySelectorAll('.accounts-list li').forEach((item) => {
         item.addEventListener('click', (e) => {
             if(e.target.tagName.toLowerCase() === "i"){

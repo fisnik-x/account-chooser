@@ -86,12 +86,7 @@ input[type="password"]:focus
     box-shadow: 0 0 0 0.2rem rgba(200, 252, 252, 0.6);
 }
 
-input[type="checkbox"] {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-a {
+a, label {
     text-decoration: none;
     color: #1c1e21;
     font-size: 14px;
@@ -103,19 +98,22 @@ ul.accounts-list {
     padding: 0;
 }
 
-ul.accounts-list li:first-child a div.account {
+ul.accounts-list li:first-child a div.account,
+ul.accounts-list li:first-child label div.account {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border-top: 1px solid #eee;
 }
 
-ul.accounts-list li:last-child a div.account {
+ul.accounts-list li:last-child a div.account,
+ul.accounts-list li:last-child label div.account {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     border-bottom: 1px solid #eee;
 }
 
-ul.accounts-list li a div.account {
+ul.accounts-list li a div.account,
+ul.accounts-list li label div.account {
     border-top: 1px solid #eee;
     font-weight: bold;
     padding: 14px 32px;
@@ -124,7 +122,8 @@ ul.accounts-list li a div.account {
     position: relative;
 }
 
-ul.accounts-list li a:hover div.account {
+ul.accounts-list li a:hover div.account,
+ul.accounts-list li label:hover div.account {
     background-color: azure;
     color: #4080ff;
     -webkit-trasition: all 0.2s ease-in 0s;
@@ -132,13 +131,16 @@ ul.accounts-list li a:hover div.account {
     transition: all 0.2s ease-in 0s;
 }
 
-.form-group {
-    margin-bottom: 0.7rem;
+ul.accounts-list li div.account input[type="checkbox"] {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    z-index: 1;
+    cursor: pointer;
 }
 
-.checkbox-label {
-    display: inline-block;
-    vertical-align: middle;
+.form-group {
+    margin-bottom: 0.7rem;
 }
 
 .note {
@@ -176,6 +178,12 @@ ul.accounts-list li a:hover div.account {
 .float-left { float: left !important; }
 .float-right { float: right !important; }
 
+.hidden {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+}
+
 .remove-btn {
     background-color: rgba(0, 0, 0, 0);
     background-image: url("../rsrc/delete_btn.png");
@@ -212,4 +220,13 @@ ul.accounts-list li a:hover div.account {
     -webkit-trasition: opacity 0.2s ease-in 0s;
     -moz-transition: opacity 0.2s ease-in 0s;
     transition: opacity 0.2s ease-in 0s;
+}
+
+.group-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.group-btns .group-item:first-child .account {
+    border-right: 0;
 }
